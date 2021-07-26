@@ -1,0 +1,15 @@
+from collections import deque
+t = int(input())
+while(t):
+    n,k = input().split()
+    n = int(n)
+    k = int(k)
+    a = input()
+    a = [int(i) for i in a.split()]
+    a = deque(a)
+    while(k):
+        a.appendleft(a[n-1])
+        a.pop()
+        k = k-1
+    print(' '.join(map(str,a)))
+    t = t-1
