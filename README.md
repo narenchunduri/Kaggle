@@ -1,2 +1,2 @@
-# Kaggle
-All my Kaggle Competitions, EDA's and Codes will be here
+# Hackerearth
+All my Hackerearth Practice Codes will be here
