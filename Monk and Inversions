@@ -1,0 +1,15 @@
+t = int(input())
+for loop in range(t):
+    n = int(input())
+    m = []
+    count = 0
+    for array in range(n):
+        m.append([int(ele) for ele in input().split()])
+    for i in range(n):
+        for j in range(n):
+            for p in range(n):
+                for q in range(n):
+                    if i<=p and j<=q:
+                        if m[i][j] > m[p][q]:
+                            count+=1
+    print(count)
